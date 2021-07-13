@@ -18,7 +18,7 @@ exports.getScheduleById = (req, res, next, id) => {
         .then( data => {
             if(data == undefined) {
                 return res.status(400).json({
-                    messgae : "no user with this Id exist",
+                    messgae : "no schedule with this Id exist",
                 })
             }
             req.schedule = data;
